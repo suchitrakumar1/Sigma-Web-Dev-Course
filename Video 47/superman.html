@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        html::-webkit-scrollbar,
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .navbar-container {
+            padding: 10px 0px;
+        }
+
+        .items-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #010121;
+            padding: 35px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: "Poppins", serif;
+            font-weight: 500;
+
+        }
+
+        .superman-text {
+            background-color: red;
+            padding: 10px;
+            font-weight: bold;
+            font-family: "Poppins", serif;
+            color: white;
+            box-shadow: 13px 9px 20px 2px rgb(0, 0, 0);
+        }
+
+        .fullbody-img {
+            min-height: 90vh;
+            background-image: url(Designer\ \(1\).jpeg);
+            border: 5px solid black;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .superman {
+            font-size: 100px;
+            font-weight: 900;
+            color: whitesmoke;
+            font-family: "Poppins", serif;
+            -webkit-text-stroke: 3px navy;
+        }
+
+        .smalltext {
+            max-width: 600px;
+            text-align: center;
+            font-size: large;
+            color: white;
+            font-family: "Poppins", serif;
+        }
+
+        .about {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .read-more {
+            padding: 8px 70px;
+            background-color: whitesmoke;
+            border: none;
+            font-size: medium;
+            margin-top: 20px;
+            font-family: "Poppins", serif;
+            border-radius: 4px;
+            color: navy;
+            font-weight: 500;
+
+        }
+
+        .audio {
+            margin-top: 30px;
+            border-radius: 4px;
+            background-color: #010121;
+            padding: 10px;
+            color: white;
+            font-family: "Poppins", serif;
+            border: 2px solid #333;
+            width: 50%;
+            max-width: 600px;
+        }
+
+        .audio::-webkit-media-controls-panel {
+            background-color: #010121;
+            border-radius: 4px;
+        }
+
+        .audio::-webkit-media-controls-play-button {
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .audio::-webkit-media-controls-volume-slider {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbarcontainer">
+        <nav class="items-container">
+            <div class="superman-text">
+                SUPERMAN
+            </div>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Superman">ABOUT</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Superman#Comics">COMICS</a></li>
+                <li><a
+                        href="https://www.google.com/search?sca_esv=744faba34f407743&rlz=1C1ONGR_enIN1072IN1072&sxsrf=AHTn8zrnWW_k3oVfffbJtnPNl1rYuZQcIA:1738761521771&q=superman+photo&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBiLrs8IwWnU6ikyw0GotCtOu3QT06Rn9a8zLE-yMqYXplik6fgOAzP7jF121cOlXyUji4zYgakQsgxlQw3c4RNnX8wgIAPsLYVFZYwUO8bC3iUz_b8UCFIYy4EGDkpe7MHLKNZlU2IWTw3bihK5eaVwZ-oaY1Pgv69ScjKkHiY2BGoXXBw&sa=X&sqi=2&ved=2ahUKEwiWt-q2z6yLAxUYzzgGHa5cIooQtKgLegQIEBAB&biw=1514&bih=738&dpr=1.25">PHOTOS</a>
+                </li>
+                <li><a
+                        href="https://www.google.com/search?sca_esv=744faba34f407743&rlz=1C1ONGR_enIN1072IN1072&sxsrf=AHTn8zpGerVv0gtuZ61d0H9c6FxwKphNkQ:1738761544629&q=superman+photo&udm=7&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBpwxALD7bRaeOIZxqOFEngzB_O_LYSS4XXpaWwzVPCpGAFVMAxVTdzYGUdlV2d68ZoTtvoNKPox9eQMqJiuJVTLjt-EZFOpLrcyI5QL87URO04BHvbasQ6D34H4aLbRi0_nUdKby-rNAy-fJBRPv-GZSZfrUZ5gQJYw1S4HfsMXohDEBCA&sa=X&ved=2ahUKEwiE1d3Bz6yLAxVVxjgGHYmbO-sQtKgLegQIDhAB&biw=1514&bih=738&dpr=1.25">VIDEOS</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main class="main-section">
+        <div class="fullbody-img">
+            <div class="about">
+                <h1 class="superman">
+                    SUPERMAN
+                </h1>
+                <p class="smalltext">
+                    Superman, born Kal-El on the planet Krypton, was sent to Earth as a baby before his homeworld’s
+                    destruction. Raised as Clark Kent in Smallville, he gains superhuman abilities like flight,
+                    strength, speed, and invulnerability. Working as a reporter for the *Daily Planet* in Metropolis, he
+                    fights for truth, justice, and peace. His iconic "S" shield symbolizes hope.
+                </p>
+                <button class="read-more">
+                    READ MORE
+                </button>
+                <br>
+                <audio src="starman.mp3" controls class="audio"></audio>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
